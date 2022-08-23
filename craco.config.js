@@ -6,6 +6,13 @@ module.exports = {
   webpack: {
     alias: {
       '@': path.resolve(__dirname, 'src/')
+    },
+    configure: (config) => {
+      config.externals = {
+        'react': 'React',
+        // 'react-dom': 'ReactDom'
+      }
+      return config
     }
   },
   plugins: [

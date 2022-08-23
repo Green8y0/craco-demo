@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.6",
     "craco": "^0.0.3",
     "craco-less": "^2.0.0",
+    "eslint-loader": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,6 +23,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "production": "serve build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "serve": "^14.0.1"
   }
 }
